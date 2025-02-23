@@ -23,19 +23,19 @@ const BannerSlider = () => {
 
   const images = [
     {
-      src: "https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      src: "/images/Picture14.jpg",
       alt: "Logistics 1",
       title: "CÔNG TY VẬN CHUYỂN HÀNG HÓA \n GIA TRƯỜNG LOGISTICS UY TÍN",
     },
     {
-      src: "https://images.pexels.com/photos/13961752/pexels-photo-13961752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      src: "/images/Picture12.jpg",
       alt: "Logistics 2",
       title: "DỊCH VỤ LOGISTICS CHUYÊN NGHIỆP \n GIAO HÀNG TOÀN QUỐC",
     },
   ];
 
   return (
-    <div className="group relative w-full">
+    <div className="group relative w-full h-[550px]">
       {/* Slider */}
       <Slider ref={sliderRef} {...settings} className="w-full">
         {images.map((image, index) => (
@@ -45,9 +45,9 @@ const BannerSlider = () => {
               alt={image.alt}
               layout="fill"
               objectFit="cover"
-              className=""
+              className="h-full w-full"
             />
-            <div className="absolute inset-0 bg-black/40 flex items-center justify-center">
+            <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
               <h1
                 className="text-white text-4xl font-bold text-center textShadow-md"
                 dangerouslySetInnerHTML={{
