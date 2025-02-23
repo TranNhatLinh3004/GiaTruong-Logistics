@@ -1,0 +1,21 @@
+// @tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/*-------------- Reset CSS----------- */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+  list-style: none;
+}
+
+body {
+  background: rgb(18, 34, 59);
+}
+
+a {
+  font-size: 1.15rem;
+}
