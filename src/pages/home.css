@@ -443,3 +443,89 @@ main {
     margin-bottom: 1rem;
     color: white;
 }
+
+@media (max-width: 768px) {
+    html {
+        font-size: 12px;
+    }
+    header {
+        position: fixed;
+        inset: 0;
+        z-index: 999;
+        background: rgba(0, 0, 0, 0.051);
+    }
+    .logo.mobile {
+        display: block;
+    }
+    .section-news {
+        padding: 1.5rem 1.25rem !important;
+    }
+    .freight-section {
+        padding: 1.5rem 1rem !important;
+    }
+    .freight-section .image-wrapper {
+        display: none;
+    }
+    .freight-section .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .freight-section .section-title {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .top-bar {
+        display: none;
+    }
+    .section-map {
+        padding: 1.5rem 1rem !important;
+    }
+    .contact-info,
+    .social-icons {
+        width: 100%;
+        justify-content: center;
+        margin: 5px 0;
+    }
+    .nav-links {
+        display: none;
+    }
+    .mobile-menu-btn {
+        display: block;
+    }
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0%;
+        left: -10%;
+        right: 0;
+        bottom: 0;
+        background: white;
+        justify-content: start;
+        padding: 20px 0 20px 6rem;
+        width: 70% !important;
+        align-items: start;
+        height: 100vh;
+    }
+    .nav-links.active a {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+    .nav-links.active a {
+        color: rgb(18, 34, 59) !important;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .transport-types {
+        font-size: 1.5rem;
+    }
+}
+
+@media (max-width: 992px) {
+    .footer-content {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
