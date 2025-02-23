@@ -7,6 +7,7 @@ import { CgChevronRight } from "react-icons/cg";
 import BannerSlider from "@/components/banner/BannerSlider";
 import ServiceSlider from "@/components/slider/ServiceSlider";
 import CustomerSlider from "@/components/slider/CustomerSlider";
+import NewsSlider from "@/components/slider/NewsSlider";
 export default function Home() {
   return (
     <Layout>
@@ -62,6 +63,8 @@ export default function Home() {
             referrerpolicy="no-referrer-when-downgrade "
           ></iframe>
         </section>
+
+        <NewsSlider />
       </main>
     </Layout>
   );
