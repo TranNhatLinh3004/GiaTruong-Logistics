@@ -1,0 +1,238 @@
+.achievement-section {
+    max-width: 1200px;
+    margin: 50px auto;
+    padding: 0 20px;
+    display: flex;
+    gap: 40px;
+    /* align-items: center; */
+}
+
+.achievement-content {
+    flex: 1;
+}
+
+.achievement-slider {
+    flex: 1;
+    position: relative;
+}
+
+.achievement-content h2 {
+    color: rgb(251, 171, 24);
+    margin-bottom: 30px;
+    font-family: Arial, sans-serif;
+}
+
+.achievement-content h3 {
+    color: rgb(251, 171, 24);
+}
+
+.achievement-content p {
+    color: white;
+    line-height: 1.6;
+    margin-bottom: 20px;
+}
+
+.read-more {
+    display: inline-block;
+    background-color: rgb(251, 171, 24);
+    color: white;
+    padding: 12px 30px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 20px;
+    transition: background-color 0.3s;
+}
+
+.read-more:hover {
+    background-color: #ff5722;
+}
+
+.main-slider {
+    width: 100%;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.main-slider img {
+    width: 100%;
+    height: 400px;
+    object-fit: cover;
+    display: none;
+}
+
+.main-slider img.active {
+    display: block;
+}
+
+.thumbnail-container {
+    display: flex;
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.thumbnail {
+    flex: 1;
+    height: 80px;
+    cursor: pointer;
+    border-radius: 5px;
+    overflow: hidden;
+    opacity: 0.7;
+    transition: opacity 0.3s;
+}
+
+.thumbnail img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.thumbnail.active {
+    opacity: 1;
+}
+
+.slider-dots {
+    position: absolute;
+    bottom: 32%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    gap: 10px;
+}
+
+.dot {
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: rgba(255, 255, 255, 0.5);
+    cursor: pointer;
+}
+
+.dot.active {
+    background-color: #ff4500;
+}
+
+.how-it-works {
+    display: flex;
+    width: 100%;
+    min-height: 500px;
+    margin: 6rem 0 2rem 0;
+}
+
+.video-section {
+    /* flex: 1; */
+    position: relative;
+    background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("/api/placeholder/800/500") center/cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 40px;
+    color: white;
+    text-align: center;
+}
+
+.play-button {
+    width: 80px;
+    height: 80px;
+    background-color: rgb(251, 171, 24);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+    margin-bottom: 30px;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.play-button:hover {
+    transform: scale(1.1);
+}
+
+.play-icon {
+    width: 0;
+    height: 0;
+    border-style: solid;
+    border-width: 15px 0 15px 25px;
+    border-color: transparent transparent transparent white;
+    margin-left: 5px;
+}
+
+.video-text {
+    max-width: 400px;
+}
+
+.video-text h3 {
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+.video-text .highlight {
+    color: rgb(251, 171, 24);
+}
+
+.steps-section {
+    flex: 2;
+    display: flex;
+}
+
+.step {
+    flex: 1;
+    position: relative;
+    padding: 40px 20px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+#step1 {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/28438334/pexels-photo-28438334/free-photo-of-nha-ga-container-v-i-tau-ch-hang.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") center/cover;
+}
+
+#step2 {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/19500299/pexels-photo-19500299/free-photo-of-thanh-ph-cac-toa-nha-h-i-c-ng-thanh-th.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") center/cover;
+}
+
+#step3 {
+    background: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.8)), url("https://images.pexels.com/photos/18460914/pexels-photo-18460914/free-photo-of-xe-h-i-nh-ng-dam-may-ph-ng-h-ng-di-u-khi-n.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") center/cover;
+}
+
+.step-number {
+    width: 40px;
+    height: 40px;
+    background-color: rgb(251, 171, 24);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.step h4 {
+    color: rgb(251, 171, 24);
+    font-size: 1.5em;
+    margin-bottom: 20px;
+}
+
+.step p {
+    max-width: 300px;
+    line-height: 1.6;
+    margin: 0 auto;
+}
+
+@media (max-width: 768px) {
+    .achievement-section {
+        flex-direction: column;
+    }
+    .main-slider img {
+        height: 300px;
+    }
+    .thumbnail {
+        height: 60px;
+    }
+}

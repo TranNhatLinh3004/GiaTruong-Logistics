@@ -78,8 +78,10 @@ function Services(props) {
             backgroundSize: "cover",
           }}
         >
-          <h1>Vận chuyển xe ô tô Bắc Nam </h1>
-          <p>Chuyên nghiệp – Uy tín – Giá tốt</p>
+          <h1 className="text-white text-4xl uppercase">
+            Vận chuyển xe ô tô Bắc Nam{" "}
+          </h1>
+          <p className="text-[20px]">Chuyên nghiệp – Uy tín – Giá tốt</p>
         </header>
 
         <div className="container-fluid mt-2rem flex">

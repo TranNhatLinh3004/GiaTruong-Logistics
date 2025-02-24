@@ -84,10 +84,10 @@ const Header = () => {
                 <Link href="#">Vận chuyển hàng hóa</Link>
               </div>
             </div>
-            <Link href="/about.html">Về chúng tôi</Link>
+            <Link href="/about">Về chúng tôi</Link>
             <Link href="/news.html">Tin tức</Link>
             <Link href="/recruitment.html">Tuyển dụng</Link>
-            <Link href="/contact.html" className="track-order">
+            <Link href="/contact" className="track-order">
               Liên hệ
             </Link>
           </div>
