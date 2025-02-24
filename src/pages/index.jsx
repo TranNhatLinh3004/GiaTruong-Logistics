@@ -32,9 +32,9 @@ export default function Home() {
               <li>Chi phí hợp lý, minh bạch</li>
               <li>Hỗ trợ khách hàng tận tâm 24/7</li>
             </ul>
-            <a href="# " class="read-more ">
+            <Link href="/about" class="read-more ">
               Xem thêm
-            </a>
+            </Link>
           </div>
           <div class="image-wrapper ">
             <div className="image-wrapper">
