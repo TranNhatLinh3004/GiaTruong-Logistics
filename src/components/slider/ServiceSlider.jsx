@@ -2,9 +2,11 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
-import Image from "next/image";
+import { useRouter } from "next/router";
+
 const services = [
   {
+    id: 1,
     title: "DỊCH VỤ CỨU HỘ XE Ô TÔ",
     description:
       "Hơn 50 đầu xe cứu hộ, cùng trang thiết bị đầy đủ, hỗ trợ 24/7 khắc phục mọi sự cố ô tô.",
@@ -12,6 +14,7 @@ const services = [
       "https://images.pexels.com/photos/11087837/pexels-photo-11087837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
+    id: 2,
     title: "DỊCH VỤ TRUNG CHUYỂN XE Ô TÔ",
     description:
       "Hơn 50 đầu xe cứu hộ đáp ứng mọi nhu cầu. Vận chuyển chuyên nghiệp, nhanh chóng, an toàn.",
@@ -19,6 +22,7 @@ const services = [
       "https://images.pexels.com/photos/11087837/pexels-photo-11087837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
+    id: 3,
     title: "DỊCH VỤ VẬN CHUYỂN HÀNG NẶNG, CÔNG KỀNH",
     description:
       "Vận chuyển các loại hàng có trọng lượng nặng, kích thước lớn, cồng kềnh. Đóng hàng đảm bảo an toàn.",
@@ -28,6 +32,8 @@ const services = [
 ];
 
 const ServiceSlider = () => {
+  const router = useRouter();
+
   const settings = {
     dots: false,
     infinite: true,
@@ -56,19 +62,24 @@ const ServiceSlider = () => {
           Nhanh chóng – Chuyên nghiệp – An Toàn
         </p>
       </div>
-      <Slider {...settings} className="services-grid ">
-        {services.map((service, index) => (
-          <div className="px-4">
-            <div key={index} className="service-card ">
+      <Slider {...settings} className="services-grid">
+        {services.map((service) => (
+          <div
+            key={service.id}
+            className="px-4"
+            onClick={() => router.push(`/news/${service.id}`)}
+            style={{ cursor: "pointer" }} // Biến con trỏ thành "pointer" để báo hiệu có thể click
+          >
+            <div className="service-card">
               <img
                 src={service.image}
                 alt={service.title}
-                className="service-image "
+                className="service-image"
                 objectFit="cover"
               />
               <div className="service-content">
-                <h3 className="service-title ">{service.title}</h3>
-                <p className="service-description ">{service.description}</p>
+                <h3 className="service-title">{service.title}</h3>
+                <p className="service-description">{service.description}</p>
               </div>
             </div>
           </div>
