@@ -45,7 +45,7 @@ function Sidebar() {
             placeholder="Tìm kiếm tin tức..."
             className="flex-1 px-3 py-2 border rounded-lg focus:ring-2 focus:ring-blue-500 border-gray-300"
           />
-          <button className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600">
+          <button className="bg-red-500 text-white px-4 py-2 rounded-lg hover:bg-red-600 cursor-pointer border-0">
             Tìm
           </button>
         </div>

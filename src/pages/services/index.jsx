@@ -88,7 +88,7 @@ function Services(props) {
           <main className="main-content">
             <div className="max-w-6xl mx-auto p-6">
               {/* Header */}
-              <h1 className="text-2xl font-bold text-[#fbab24] mb-4">
+              <h1 className="text-[25px] font-bold text-[#fbab24] mb-4">
                 TRAIN FREIGHT SHIPMENT
               </h1>
 
