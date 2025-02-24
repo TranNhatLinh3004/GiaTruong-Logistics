@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import React from "react";
 import "./news.css";
 import Sidebar from "@/components/sidebar/Sidebar";
+import Link from "next/link";
 function News(props) {
   return (
     <Layout>
@@ -47,9 +48,9 @@ function News(props) {
                   Nam Logistics chính thức khai trương chi nhánh mới tại Đà
                   Nẵng...
                 </p>
-                <a href="#" class="read-more news">
+                <Link href="/news/1" class="read-more news">
                   Đọc tiếp →
-                </a>
+                </Link>
               </div>
             </article>
 
@@ -70,9 +71,9 @@ function News(props) {
                   Ngành logistics đang chứng kiến sự chuyển mình mạnh mẽ với xu
                   hướng xanh hóa chuỗi cung ứng...
                 </p>
-                <a href="#" class="read-more news">
+                <Link href="/news/1" class="read-more news">
                   Đọc tiếp →
-                </a>
+                </Link>
               </div>
             </article>
             <article class="news-card">
@@ -92,9 +93,9 @@ function News(props) {
                   Ngành logistics đang chứng kiến sự chuyển mình mạnh mẽ với xu
                   hướng xanh hóa chuỗi cung ứng...
                 </p>
-                <a href="#" class="read-more news">
+                <Link href="/news/1" class="read-more news">
                   Đọc tiếp →
-                </a>
+                </Link>
               </div>
             </article>
           </div>
