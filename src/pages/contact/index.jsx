@@ -8,12 +8,12 @@ function Contact(props) {
       <main>
         <div class="hero">
           <h1>LIÊN HỆ VỚI CHÚNG TÔI</h1>
-          <p>
+          <p className="text-[18px]">
             Thông tin liên hệ chính thức của Công ty Vận Tải Gia Trường Star
           </p>
         </div>
         <div class="description">
-          <p>
+          <p className="text-[18px]">
             Nếu quý khách hàng đang tìm kiếm dịch vụ vận chuyển hàng hóa, vận
             chuyển xe ô tô hoặc vận chuyển hàng hóa từ Bắc vào Nam, hãy liên hệ
             vớiCông ty vận chuyển Gia Trường Logistics ngay hôm nay để được hỗ

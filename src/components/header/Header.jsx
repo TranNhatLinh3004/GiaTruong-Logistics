@@ -85,8 +85,8 @@ const Header = () => {
               </div>
             </div>
             <Link href="/about">Về chúng tôi</Link>
-            <Link href="/news.html">Tin tức</Link>
-            <Link href="/recruitment.html">Tuyển dụng</Link>
+            <Link href="/news">Tin tức</Link>
+            <Link href="/recruitment">Tuyển dụng</Link>
             <Link href="/contact" className="track-order">
               Liên hệ
             </Link>
