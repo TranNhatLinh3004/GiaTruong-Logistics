@@ -21,7 +21,7 @@ const HotlineButton = () => {
   };
 
   return (
-    <>
+    <div className="fixed bottom-0 right-0">
       <div className="fixed bottom-7 right-7 space-y-4 z-50">
         {/* Phone Button */}
         <Link href="tel:+84905336549">
@@ -58,7 +58,7 @@ const HotlineButton = () => {
           </button>
         )}
       </div>
-    </>
+    </div>
   );
 };
 
