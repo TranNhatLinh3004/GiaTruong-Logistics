@@ -22,32 +22,42 @@ const HotlineButton = () => {
 
   return (
     <>
-      {/* Group các nút ở góc phải */}
-      <div className="fixed bottom-7 right-7 flex flex-col space-y-4 z-50">
+      <div className="fixed bottom-7 right-7 space-y-4 z-50">
         {/* Phone Button */}
         <Link href="tel:+84905336549">
-          <div className="w-16 h-16 bg-yellow-400 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-yellow-500 transition duration-300">
-            <IoMdCall size={30} />
+          <div className="relative w-16 h-16 text-white">
+            <div className="absolute inset-0 bg-yellow-400 opacity-80 rounded-full animate-ping"></div>
+            <div className="absolute inset-1 bg-yellow-400 rounded-full flex items-center justify-center">
+              <IoMdCall size={24} />
+            </div>
           </div>
         </Link>
 
         {/* Zalo Button */}
         <Link href="https://zalo.me/84905336549" target="_blank">
-          <div className="w-16 h-16 bg-blue-500 text-white rounded-full flex items-center justify-center shadow-lg hover:bg-blue-600 transition duration-300">
-            <SiZalo size={30} />
+          <div className="relative w-16 h-16 mt-3 text-white">
+            <div className="absolute inset-0 bg-yellow-400 opacity-80 rounded-full animate-ping"></div>
+            <div className="absolute inset-1 bg-yellow-400 rounded-full flex items-center justify-center">
+              <SiZalo size={24} />
+            </div>
           </div>
         </Link>
       </div>
 
-      {/* Nút cuộn lên đầu trang */}
-      {showScrollButton && (
-        <button
-          onClick={scrollToTop}
-          className="fixed bottom-9 left-9 z-50 bg-gray-700 text-white rounded-full w-12 h-12 flex items-center justify-center shadow-lg hover:bg-gray-900 transition duration-300"
-        >
-          <HiArrowUp size={30} />
-        </button>
-      )}
+      <div className="fixed bottom-9 left-9 space-y-4 z-50">
+        {showScrollButton && (
+          <button
+            onClick={scrollToTop}
+            className="bg-transparent  border-0 focus:outline-none  bottom-0 left-0 cursor-pointer"
+          >
+            <div className="relative w-12 h-12  mt-3 text-primary-color hover:text-white">
+              <div className="absolute inset-1 hover:bg-primary-color hover:border-0 rounded-[5px] border-2 border-solid border-gray-300  flex items-center justify-center">
+                <HiArrowUp size={24} />
+              </div>
+            </div>
+          </button>
+        )}
+      </div>
     </>
   );
 };
