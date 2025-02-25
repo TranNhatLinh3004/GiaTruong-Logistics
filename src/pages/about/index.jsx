@@ -1,7 +1,28 @@
 import Layout from "@/components/Layout";
-import React from "react";
+import React, { useState, useEffect } from "react";
 import "./about.css";
 function About(props) {
+  const images = [
+    "https://images.pexels.com/photos/3856440/pexels-photo-3856440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    "https://images.pexels.com/photos/12267889/pexels-photo-12267889.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+  ];
+  const [currentIndex, setCurrentIndex] = useState(0);
+
+  // Xử lý click vào thumbnail
+  const handleThumbnailClick = (index) => {
+    setCurrentIndex(index);
+  };
+
+  // Tự động chuyển ảnh mỗi 5 giây
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 5000);
+
+    return () => clearInterval(interval);
+  }, []);
+
   return (
     <Layout>
       <main>
@@ -93,49 +114,44 @@ function About(props) {
             </a> */}
           </div>
 
-          <div class="achievement-slider">
-            <div class="main-slider">
+          <div className="w-full max-w-lg mx-auto p-4">
+            {/* Main Image */}
+            <div className="relative">
               <img
-                src="https://images.pexels.com/photos/3856440/pexels-photo-3856440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                alt="Achievement 1"
-                class="active"
+                src={images[currentIndex]}
+                alt={`Achievement ${currentIndex + 1}`}
+                className="w-full h-64 object-cover rounded-lg transition-all duration-500"
               />
             </div>
 
-            <div class="slider-dots">
-              <span class="dot active"></span>
-              <span class="dot"></span>
-              <span class="dot"></span>
+            {/* Thumbnails */}
+            <div className="w-full flex justify-center gap-3 mt-4">
+              {images.map((src, index) => (
+                <img
+                  key={index}
+                  src={src}
+                  alt={`Thumbnail ${index + 1}`}
+                  className={`w-40 h-24 object-cover rounded-md cursor-pointer transition-all duration-300 ${
+                    index === currentIndex
+                      ? "brightness-100 opacity-100"
+                      : "brightness-65 opacity-65"
+                  }`}
+                  onClick={() => handleThumbnailClick(index)}
+                />
+              ))}
             </div>
 
-            <div class="thumbnail-container">
-              <div
-                class="thumbnail active"
-                data-src="https://images.pexels.com/photos/3856440/pexels-photo-3856440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              >
-                <img
-                  src="https://images.pexels.com/photos/3856440/pexels-photo-3856440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="Thumbnail 1"
-                />
-              </div>
-              <div
-                class="thumbnail"
-                data-src="https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              >
-                <img
-                  src="https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="Thumbnail 2"
-                />
-              </div>
-              <div
-                class="thumbnail"
-                data-src="https://images.pexels.com/photos/12267889/pexels-photo-12267889.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-              >
-                <img
-                  src="https://images.pexels.com/photos/12267889/pexels-photo-12267889.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
-                  alt="Thumbnail 3"
-                />
-              </div>
+            {/* Dots */}
+            <div className="flex justify-center mt-2 space-x-2">
+              {images.map((_, index) => (
+                <span
+                  key={index}
+                  className={`h-3 w-3 rounded-full cursor-pointer ${
+                    index === currentIndex ? "bg-blue-500" : "bg-gray-300"
+                  }`}
+                  onClick={() => setCurrentIndex(index)}
+                ></span>
+              ))}
             </div>
           </div>
         </section>
