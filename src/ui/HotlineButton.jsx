@@ -1,38 +1,34 @@
-import Link from "next/link";
 import { SiZalo } from "react-icons/si";
+import { FaPhoneAlt } from "react-icons/fa";
+import "./style.css";
+import Link from "next/link";
 import { IoMdCall } from "react-icons/io";
-import { HiArrowUp } from "react-icons/hi";
-import { useEffect, useState } from "react";
-import {
-  FaRegBookmark,
-  FaRegThumbsUp,
-  FaRegCommentDots,
-  FaRegShareSquare,
-} from "react-icons/fa";
 const HotlineButton = () => {
-  const [showScrollButton, setShowScrollButton] = useState(false);
-
-  useEffect(() => {
-    const handleScroll = () => {
-      setShowScrollButton(window.scrollY > 400);
-    };
-
-    window.addEventListener("scroll", handleScroll);
-    return () => window.removeEventListener("scroll", handleScroll);
-  }, []);
-
-  const scrollToTop = () => {
-    window.scrollTo({ top: 0, behavior: "smooth" });
-  };
-
   return (
-    <div className="fixed left-8 top-1/2 -translate-y-1/2 hidden lg:flex flex-col gap-4">
-      <button className="p-3 bg-white rounded-full shadow-lg hover:bg-gray-50">
-        <FaRegShareSquare className="w-5 h-5 text-gray-600" />
-      </button>
-      <button className="p-3 bg-white rounded-full shadow-lg hover:bg-gray-50">
-        <FaRegBookmark className="w-5 h-5 text-gray-600" />
-      </button>
+    <div
+      className="fixed bottom-8 right-8 flex flex-col gap-4 z-[9999] hotline-button"
+      style={{ position: "fixed", bottom: "3rem", right: "2rem", zIndex: 9999 }}
+    >
+      {/* Zalo Button */}
+      {/* Zalo Button */}
+      <Link href="tel:+84915335377">
+        <div className="relative w-16 h-16 text-white container-btn">
+          <div className="wrapper-btn"></div>
+          <div className="absolute inset-1 bg-yellow-400 rounded-full flex items-center justify-center phone-button">
+            <IoMdCall size={24} />
+          </div>
+        </div>
+      </Link>
+
+      {/* Zalo Button */}
+      <Link href="https://zalo.me/0915335377" target="_blank">
+        <div className="relative w-16 h-16 mt-3 text-white container-btn">
+          <div className="wrapper-btn"></div>
+          <div className="absolute inset-1 bg-yellow-400 rounded-full flex items-center justify-center zalo-button">
+            <SiZalo size={24} />
+          </div>
+        </div>
+      </Link>
     </div>
   );
 };
