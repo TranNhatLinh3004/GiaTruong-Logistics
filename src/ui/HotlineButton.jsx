@@ -1,13 +1,13 @@
 import { SiZalo } from "react-icons/si";
 import { FaPhoneAlt } from "react-icons/fa";
-import "./style.css";
+import "./hotline_style.css";
 import Link from "next/link";
 import { IoMdCall } from "react-icons/io";
 const HotlineButton = () => {
   return (
     <div
       className="fixed bottom-8 right-8 flex flex-col gap-4 z-[9999] hotline-button"
-      style={{ position: "fixed", bottom: "3rem", right: "2rem", zIndex: 9999 }}
+      style={{ position: "fixed", bottom: "3rem", right: "6rem", zIndex: 9999 }}
     >
       {/* Zalo Button */}
       {/* Zalo Button */}
