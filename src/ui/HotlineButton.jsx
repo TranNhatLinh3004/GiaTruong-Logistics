@@ -7,12 +7,22 @@ const HotlineButton = () => {
   return (
     <div
       className="fixed bottom-8 right-8 flex flex-col gap-4 z-[9999] hotline-button"
-      style={{ position: "fixed", bottom: "3rem", right: "6rem", zIndex: 9999 }}
+      style={{
+        position: "fixed",
+        bottom: "3rem",
+        right: "6rem",
+        zIndex: 9999,
+      }}
     >
       {/* Zalo Button */}
       {/* Zalo Button */}
       <Link href="tel:+84915335377">
-        <div className="relative w-16 h-16 text-white container-btn">
+        <div
+          className="relative w-16 h-16 text-white container-btn"
+          style={{
+            width: "4rem",
+          }}
+        >
           <div
             className="wrapper-btn"
             style={{
@@ -27,7 +37,14 @@ const HotlineButton = () => {
 
       {/* Zalo Button */}
       <Link href="https://zalo.me/0915335377" target="_blank">
-        <div className="relative w-16 h-16 mt-3 text-white container-btn">
+        <div
+          className="relative
+        
+        w-16 h-16 mt-3 text-white container-btn"
+          style={{
+            width: "4rem",
+          }}
+        >
           <div
             className="wrapper-btn"
             style={{
