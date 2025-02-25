@@ -444,6 +444,55 @@ main {
     color: white;
 }
 
+.phone-button {
+    padding: 1rem;
+    background-color: rgb(251, 171, 24);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.zalo-button {
+    padding: 1rem;
+    background-color: rgb(251, 171, 24);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-btn {
+    position: relative;
+}
+
+.container-btn .wrapper-btn {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-56%, -56%);
+    width: 110%;
+    height: 110%;
+    border-radius: 50%;
+    background-color: rgb(241, 183, 77);
+    animation: pulse 1.1s infinite ease-out;
+}
+
+@keyframes pulse {
+    0% {
+        transform: translate(-56%, -56%) scale(1);
+        opacity: 0.6;
+    }
+    50% {
+        transform: translate(-56%, -56%) scale(1.4);
+        opacity: 0.3;
+    }
+    100% {
+        transform: translate(-56%, -56%) scale(1.8);
+        opacity: 0;
+    }
+}
+
 @media (max-width: 768px) {
     html {
         font-size: 12px;

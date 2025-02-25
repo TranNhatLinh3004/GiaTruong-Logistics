@@ -1,6 +1,6 @@
 import { SiZalo } from "react-icons/si";
 import { FaPhoneAlt } from "react-icons/fa";
-import "./hotline_style.css";
+// import "./hotline_style.css";
 import Link from "next/link";
 import { IoMdCall } from "react-icons/io";
 const HotlineButton = () => {
