@@ -33,9 +33,9 @@ const images = [
   "/images/Picture3.jpg",
   "/images/Picture2.jpg",
   "/images/Picture1.jpg",
-  "/images/Picture3.jpg",
-  "/images/Picture2.jpg",
-  "/images/Picture1.jpg",
+  "/images/Banner4.jpg",
+  "/images/cang.jpg",
+  "/images/xe4.jpg",
 ];
 
 function Footer() {

@@ -2,11 +2,7 @@ import Layout from "@/components/Layout";
 import React, { useState, useEffect } from "react";
 import "./about.css";
 function About(props) {
-  const images = [
-    "https://images.pexels.com/photos/3856440/pexels-photo-3856440.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    "https://images.pexels.com/photos/2199293/pexels-photo-2199293.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-    "https://images.pexels.com/photos/12267889/pexels-photo-12267889.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
-  ];
+  const images = ["/images/xe3.jpg", "/images/Banner4.jpg", "/images/cang.jpg"];
   const [currentIndex, setCurrentIndex] = useState(0);
 
   // Xử lý click vào thumbnail
