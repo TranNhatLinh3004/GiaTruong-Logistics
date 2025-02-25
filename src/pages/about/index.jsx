@@ -34,7 +34,9 @@ function About(props) {
           }}
         >
           <h1 className="text-4xl text-white mb-4">VỀ CHÚNG TÔI</h1>
-          <p className="text-[20px] text-white">Tối ưu- An toàn- Nhanh chóng</p>
+          <p className="text-[20px] text-white ">
+            Tối ưu- An toàn- Nhanh chóng
+          </p>
         </div>
 
         <section class="achievement-section">

@@ -2,6 +2,7 @@ import React from "react";
 import "./services.css";
 import Layout from "@/components/Layout";
 import Sidebar from "@/components/sidebar/Sidebar";
+import FAQAccordion from "@/components/accordion/FAQAccordion";
 function Services(props) {
   const infoItems = [
     {
@@ -88,54 +89,71 @@ function Services(props) {
           <main className="main-content">
             <div className="max-w-6xl mx-auto p-6">
               {/* Header */}
-              <h1 className="text-[25px] font-bold text-[#fbab24] mb-4">
-                TRAIN FREIGHT SHIPMENT
+              <h1 className="text-3xl font-bold text-[#fbab24] mb-2">
+                Tại sao nên chọn dịch vụ của chúng tôi?
               </h1>
 
               {/* Description */}
-              <p className="text-white mb-8 leading-6 text-[18px]">
-                Rail freight transport is the use of railways and trains to
-                transport cargo as opposed to human passengers. A freight train
-                or goods train is a group of freight cars (US) or goods wagons
-                (International Union of Railways) hauled by one or more
-                locomotives on a railway, transport.
+              <p className="text-white mb-8  text-[18px] leading-7">
+                - An toàn và đảm bảo: Xe của bạn sẽ được bảo vệ tối đa, vận
+                chuyển bằng xe chuyên dụng, có bạt che chắn kỹ lưỡng.
                 <br />
+                - Chi phí cạnh tranh: Cam kết mức giá hợp lý, tối ưu chi phí
+                nhưng vẫn đảm bảo chất lượng dịch vụ.
                 <br />
-                Rail freight transport is the use of railways and trains to
-                transport cargo as opposed to human passengers. A freight train
-                or goods train is a group of freight cars (US) or goods wagons
-                (International Union of Railways) hauled by one or more
-                locomotives on a railway, transport.
+                - Đội ngũ chuyên nghiệp: Nhân viên giàu kinh nghiệm, tận tâm hỗ
+                trợ khách hàng trong suốt quá trình vận chuyển.
+                <br />
+                - Bảo hiểm đầy đủ: Xe được bảo hiểm trong suốt hành trình, giúp
+                bạn an tâm tuyệt đối.
+                <br />- Linh hoạt về thời gian và địa điểm: Nhận xe tận nơi và
+                giao xe đúng thời gian cam kết.
               </p>
 
               {/* Image Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 h-72">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 h-80">
                 {/* Ảnh lớn bên trái */}
-                <div className="h-72 relative">
+                <div className="h-80 relative">
                   <img
-                    src="https://images.pexels.com/photos/906982/pexels-photo-906982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    src="/images/bai.jpg"
                     alt="Warehouse Worker"
                     className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
 
                 {/* Hai ảnh nhỏ bên phải */}
-                <div className="grid grid-rows-2 gap-4 h-72">
+                <div className="grid grid-rows-2 gap-4 h-80">
                   <img
-                    src="https://images.pexels.com/photos/906982/pexels-photo-906982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    src="/images/xe6.jpg"
                     alt="Forklift Operations"
-                    className="w-full h-full object-cover rounded-lg"
+                    className="w-full h-full object-cover rounded-lg "
                   />
                   <img
-                    src="https://images.pexels.com/photos/906982/pexels-photo-906982.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                    src="/images/nhanvien.jpg"
                     alt="Logistics Team"
                     className="w-full h-full object-cover rounded-lg"
                   />
                 </div>
               </div>
+              <h1 className="text-3xl font-bold text-[#fbab24] mb-2">
+                Hình thức vận chuyển
+              </h1>
+
+              <p className="text-white mb-8  text-[18px] leading-7">
+                - Vận chuyển bằng xe lồng chuyên dụng: Đảm bảo an toàn cao, giảm
+                thiểu rủi ro.
+                <br />
+                - Vận chuyển bằng container: Phù hợp với xe cao cấp, hạn chế tác
+                động môi trường bên ngoài.
+                <br />
+                - Đội ngũ chuyên nghiệp: Nhân viên giàu kinh nghiệm, tận tâm hỗ
+                trợ khách hàng trong suốt quá trình vận chuyển.
+                <br />- Vận chuyển bằng tàu hỏa: Chi phí thấp, an toàn, thời
+                gian ổn định.
+              </p>
 
               {/* Info Cards */}
-              <div className="grid grid-cols-1  gap-6">
+              {/* <div className="grid grid-cols-1  gap-6">
                 {infoItems.map((item, index) => (
                   <div
                     key={index}
@@ -146,14 +164,16 @@ function Services(props) {
                       <h3 className="font-semibold text-white text-[18px] mb-2">
                         {item.title}
                       </h3>
-                      <p className="text-sm text-white text-[18px]">
+                      <p className=" text-white text-[18px]">
                         {item.description}
                       </p>
                     </div>
                   </div>
                 ))}
-              </div>
+              </div> */}
             </div>
+
+            <FAQAccordion />
           </main>
 
           <Sidebar />
