@@ -15,7 +15,6 @@ const HotlineButton = () => {
       }}
     >
       {/* Zalo Button */}
-      {/* Zalo Button */}
       <Link href="tel:+84915335377">
         <div
           className="relative w-16 h-16 text-white container-btn"
