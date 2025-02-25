@@ -13,7 +13,12 @@ const HotlineButton = () => {
       {/* Zalo Button */}
       <Link href="tel:+84915335377">
         <div className="relative w-16 h-16 text-white container-btn">
-          <div className="wrapper-btn"></div>
+          <div
+            className="wrapper-btn"
+            style={{
+              backgroundColor: "rgb(241, 183, 77)",
+            }}
+          ></div>
           <div className="absolute inset-1 bg-yellow-400 rounded-full flex items-center justify-center phone-button">
             <IoMdCall size={24} />
           </div>
@@ -23,7 +28,12 @@ const HotlineButton = () => {
       {/* Zalo Button */}
       <Link href="https://zalo.me/0915335377" target="_blank">
         <div className="relative w-16 h-16 mt-3 text-white container-btn">
-          <div className="wrapper-btn"></div>
+          <div
+            className="wrapper-btn"
+            style={{
+              backgroundColor: "rgb(241, 183, 77)",
+            }}
+          ></div>
           <div className="absolute inset-1 bg-yellow-400 rounded-full flex items-center justify-center zalo-button">
             <SiZalo size={24} />
           </div>
