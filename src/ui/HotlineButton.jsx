@@ -3,7 +3,12 @@ import { SiZalo } from "react-icons/si";
 import { IoMdCall } from "react-icons/io";
 import { HiArrowUp } from "react-icons/hi";
 import { useEffect, useState } from "react";
-
+import {
+  FaRegBookmark,
+  FaRegThumbsUp,
+  FaRegCommentDots,
+  FaRegShareSquare,
+} from "react-icons/fa";
 const HotlineButton = () => {
   const [showScrollButton, setShowScrollButton] = useState(false);
 
@@ -21,43 +26,13 @@ const HotlineButton = () => {
   };
 
   return (
-    <div className="fixed bottom-0 right-0">
-      <div className="fixed bottom-7 right-7 space-y-4 z-50">
-        {/* Phone Button */}
-        <Link href="tel:+84905336549">
-          <div className="relative w-16 h-16 text-white">
-            <div className="absolute inset-0 bg-yellow-400 opacity-80 rounded-full animate-ping"></div>
-            <div className="absolute inset-1 bg-yellow-400 rounded-full flex items-center justify-center">
-              <IoMdCall size={24} />
-            </div>
-          </div>
-        </Link>
-
-        {/* Zalo Button */}
-        <Link href="https://zalo.me/84905336549" target="_blank">
-          <div className="relative w-16 h-16 mt-3 text-white">
-            <div className="absolute inset-0 bg-yellow-400 opacity-80 rounded-full animate-ping"></div>
-            <div className="absolute inset-1 bg-yellow-400 rounded-full flex items-center justify-center">
-              <SiZalo size={24} />
-            </div>
-          </div>
-        </Link>
-      </div>
-
-      <div className="fixed bottom-9 left-9 space-y-4 z-50">
-        {showScrollButton && (
-          <button
-            onClick={scrollToTop}
-            className="bg-transparent  border-0 focus:outline-none  bottom-0 left-0 cursor-pointer"
-          >
-            <div className="relative w-12 h-12  mt-3 text-primary-color hover:text-white">
-              <div className="absolute inset-1 hover:bg-primary-color hover:border-0 rounded-[5px] border-2 border-solid border-gray-300  flex items-center justify-center">
-                <HiArrowUp size={24} />
-              </div>
-            </div>
-          </button>
-        )}
-      </div>
+    <div className="fixed left-8 top-1/2 -translate-y-1/2 hidden lg:flex flex-col gap-4">
+      <button className="p-3 bg-white rounded-full shadow-lg hover:bg-gray-50">
+        <FaRegShareSquare className="w-5 h-5 text-gray-600" />
+      </button>
+      <button className="p-3 bg-white rounded-full shadow-lg hover:bg-gray-50">
+        <FaRegBookmark className="w-5 h-5 text-gray-600" />
+      </button>
     </div>
   );
 };
