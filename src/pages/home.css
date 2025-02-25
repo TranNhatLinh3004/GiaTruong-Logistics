@@ -448,12 +448,12 @@ main {
     html {
         font-size: 12px;
     }
-    header {
+    /* header {
         position: fixed;
         inset: 0;
         z-index: 999;
         background: rgba(0, 0, 0, 0.051);
-    }
+    } */
     .logo.mobile {
         display: block;
     }
