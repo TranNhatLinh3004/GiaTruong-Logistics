@@ -1,238 +1,242 @@
 /* Header Styles */
 
 header {
-  padding: 1rem 7%;
+    padding: 1rem 7%;
 }
 
 .top-bar {
-  color: white;
-  padding: 1rem 0% 1.5rem 0%;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  flex-wrap: wrap;
+    color: white;
+    padding: 1rem 0% 1.5rem 0%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
 }
 
 .contact-info {
-  display: flex;
-  gap: 20px;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 20px;
+    flex-wrap: wrap;
 }
 
 .contact-info span {
-  display: flex;
-  gap: 0.5rem;
-  flex-wrap: wrap;
+    display: flex;
+    gap: 0.5rem;
+    flex-wrap: wrap;
 }
 
 .social-icons {
-  display: flex;
-  gap: 15px;
+    display: flex;
+    gap: 15px;
 }
 
 .social-icons {
-  display: flex;
-  gap: 15px;
+    display: flex;
+    gap: 15px;
 }
 
 .social-icons a i {
-  color: #fff;
+    color: #fff;
 }
+
 
 /* Navigation Styles */
 
 .nav-container {
-  /* background: rgba(0, 0, 0, 0.9); */
-  padding-right: 1.5rem;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-  position: sticky;
-  top: 0;
-  z-index: 1000;
-  border-top: 1px solid rgb(251, 171, 24);
+    /* background: rgba(0, 0, 0, 0.9); */
+    padding-right: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    border-top: 1px solid rgb(251, 171, 24);
 }
 
 .logo {
-  display: flex;
-  align-items: center;
-  color: white;
-  text-decoration: none;
+    display: flex;
+    align-items: center;
+    color: white;
+    text-decoration: none;
 }
 
 .logo img {
-  max-width: 10rem;
-  height: auto;
+    max-width: 10rem;
+    height: auto;
 }
 
 .logo.mobile {
-  display: none;
+    display: none;
 }
 
 .mobile-menu-btn {
-  display: none;
-  background: none;
-  border: none;
-  color: white;
-  font-size: 24px;
-  cursor: pointer;
+    display: none;
+    background: none;
+    border: none;
+    color: white;
+    font-size: 24px;
+    cursor: pointer;
 }
 
 .nav-links {
-  display: flex;
-  gap: 30px;
-  align-items: center;
-  position: relative;
+    display: flex;
+    gap: 30px;
+    align-items: center;
+    position: relative;
 }
 
 .nav-links a {
-  color: white;
-  text-decoration: none;
-  font-weight: 500;
-  transition: color 0.3s ease;
-  padding: 0.5rem 0;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s ease;
+    padding: 0.5rem 0;
 }
 
 .nav-links a:hover {
-  border-bottom: 2px solid rgb(251, 171, 24);
+    border-bottom: 2px solid rgb(251, 171, 24);
 }
+
 
 /* Dropdown menu */
 
 .dropdown {
-  position: relative;
+    position: relative;
 }
 
 .dropdown-menu {
-  display: none;
-  position: absolute;
-  top: 102%;
-  left: 0;
-  background: white;
-  border-radius: 5px;
-  padding: 10px;
-  min-width: 200px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
-  z-index: 1000;
+    display: none;
+    position: absolute;
+    top: 102%;
+    left: 0;
+    background: white;
+    border-radius: 5px;
+    padding: 10px;
+    min-width: 200px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
 }
 
 .dropdown-menu a {
-  display: block;
-  padding: 10px;
-  color: black;
-  text-decoration: none;
-  transition: bg 0.3s ease;
+    display: block;
+    padding: 10px;
+    color: black;
+    text-decoration: none;
+    transition: bg 0.3s ease;
 }
 
 .dropdown-menu a:hover {
-  color: rgb(251, 171, 24);
+    color: rgb(251, 171, 24);
 }
 
 .dropdown a i {
-  padding-left: 0.3rem;
+    padding-left: 0.3rem;
 }
+
 
 /* Hiển thị menu khi hover */
 
 .dropdown:hover .dropdown-menu {
-  display: block;
+    display: block;
 }
+
 
 /* Nút "Liên hệ" */
 
 .track-order {
-  background: rgb(251, 171, 24);
-  color: white;
-  padding: 10px 30px;
-  border-radius: 25px;
-  text-decoration: none;
-  display: flex;
-  justify-content: center;
-  width: 100px;
+    background: rgb(251, 171, 24);
+    color: white;
+    padding: 10px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    width: 100px;
 }
 
 .track-order:hover {
-  border-bottom: none !important;
-  background: #f4511e;
+    border-bottom: none !important;
+    background: #f4511e;
 }
 
 @media (max-width: 768px) {
-  html {
-    font-size: 12px;
-  }
-  header {
+    html {
+        font-size: 12px;
+    }
+    /* header {
     position: fixed;
     inset: 0;
     z-index: 999;
     background: rgba(0, 0, 0, 0.051);
-  }
-  .logo.mobile {
-    display: block;
-  }
-  /* .overplay {
+  } */
+    .logo.mobile {
+        display: block;
+    }
+    /* .overplay {
         display: none;
     } */
-  /* .overplay {} */
-  .freight-section {
-    padding: 1.5rem 1rem !important;
-  }
-  .freight-section .image-wrapper {
-    display: none;
-  }
-  .freight-section .content-wrapper {
-    display: flex;
-    flex-direction: column;
-    justify-content: center !important;
-    align-items: center !important;
-  }
-  .freight-section .section-title {
-    text-align: center;
-    margin-top: 2rem;
-  }
-  .top-bar {
-    display: none;
-  }
-  .section-map {
-    padding: 1.5rem 1rem !important;
-  }
-  .contact-info,
-  .social-icons {
-    width: 100%;
-    justify-content: center;
-    margin: 5px 0;
-  }
-  .nav-links {
-    display: none;
-  }
-  .mobile-menu-btn {
-    display: block;
-  }
-  .nav-links.active {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 0%;
-    left: -10%;
-    right: 0;
-    bottom: 0;
-    background: white;
-    justify-content: start;
-    padding: 20px 0 20px 6rem;
-    width: 70% !important;
-    align-items: start;
-    height: 100vh;
-  }
-  .nav-links.active a {
-    font-size: 1.2rem;
-    text-transform: uppercase;
-  }
-  .nav-links.active a {
-    color: rgb(18, 34, 59) !important;
-  }
-  .hero h1 {
-    font-size: 2.5rem;
-  }
-  .transport-types {
-    font-size: 1.5rem;
-  }
+    /* .overplay {} */
+    .freight-section {
+        padding: 1.5rem 1rem !important;
+    }
+    .freight-section .image-wrapper {
+        display: none;
+    }
+    .freight-section .content-wrapper {
+        display: flex;
+        flex-direction: column;
+        justify-content: center !important;
+        align-items: center !important;
+    }
+    .freight-section .section-title {
+        text-align: center;
+        margin-top: 2rem;
+    }
+    .top-bar {
+        display: none;
+    }
+    .section-map {
+        padding: 1.5rem 1rem !important;
+    }
+    .contact-info,
+    .social-icons {
+        width: 100%;
+        justify-content: center;
+        margin: 5px 0;
+    }
+    .nav-links {
+        display: none;
+    }
+    .mobile-menu-btn {
+        display: block;
+    }
+    .nav-links.active {
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        top: 0%;
+        left: -10%;
+        right: 0;
+        bottom: 0;
+        background: white;
+        justify-content: start;
+        padding: 20px 0 20px 6rem;
+        width: 70% !important;
+        align-items: start;
+        height: 100vh;
+    }
+    .nav-links.active a {
+        font-size: 1.2rem;
+        text-transform: uppercase;
+    }
+    .nav-links.active a {
+        color: rgb(18, 34, 59) !important;
+    }
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+    .transport-types {
+        font-size: 1.5rem;
+    }
 }
