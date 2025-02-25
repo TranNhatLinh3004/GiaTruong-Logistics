@@ -24,7 +24,7 @@ function ScrollButton(props) {
   return (
     <div
       className="fixed bottom-8 left-8 flex flex-col gap-4 z-[9999] hotline-button"
-      style={{ position: "fixed", bottom: "3rem", left: "4rem", zIndex: 9999 }}
+      style={{ position: "fixed", bottom: "3rem", left: "3rem", zIndex: 9999 }}
     >
       {showScrollButton && (
         <button
