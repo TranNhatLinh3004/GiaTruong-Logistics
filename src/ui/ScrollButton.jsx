@@ -24,21 +24,22 @@ function ScrollButton(props) {
   return (
     <div
       className="fixed bottom-8 left-8 flex flex-col gap-4 z-[9999] hotline-button"
-      style={{ position: "fixed", bottom: "3rem", left: "6rem", zIndex: 9999 }}
+      style={{ position: "fixed", bottom: "3rem", left: "4rem", zIndex: 9999 }}
     >
       {showScrollButton && (
         <button
           onClick={scrollToTop}
           className="bg-transparent  border-0 focus:outline-none  bottom-0 left-0 cursor-pointer   flex justify-center items-center "
           style={{
-            border: "1px solid gray",
+            border: "1px solid gray ",
+            background: "gray",
           }}
         >
           <div className="">
             <div
               className=""
               style={{
-                padding: "10px",
+                padding: "6px",
               }}
             >
               <HiArrowUp size={24} color="white" />
