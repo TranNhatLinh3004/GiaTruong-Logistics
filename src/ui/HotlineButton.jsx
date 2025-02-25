@@ -10,7 +10,7 @@ const HotlineButton = () => {
       style={{
         position: "fixed",
         bottom: "3rem",
-        right: "6rem",
+        right: "3rem",
         zIndex: 9999,
       }}
     >
