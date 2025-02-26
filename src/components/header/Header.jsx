@@ -1,8 +1,8 @@
+import { useState } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { AiFillPhone, AiOutlineMail } from "react-icons/ai";
 import { CgChevronDown } from "react-icons/cg";
-import "./header.css";
 import {
   FaMapMarkerAlt,
   FaFacebookF,
@@ -11,9 +11,17 @@ import {
   FaTwitter,
   FaInstagram,
   FaBars,
+  FaTimes,
 } from "react-icons/fa";
+import "./header.css";
 
 const Header = () => {
+  const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
+
+  const toggleMobileMenu = () => {
+    setIsMobileMenuOpen(!isMobileMenuOpen);
+  };
+
   return (
     <header>
       {/* Top bar */}
@@ -50,34 +58,33 @@ const Header = () => {
       </div>
 
       {/* Navigation */}
-      <div className="overplay" id="overplay">
+      <div className="overplay">
         <nav className="nav-container">
           <Link href="/" className="logo">
-            <Image
-              src="/images/logo.png"
-              alt=" Logo"
-              width={180}
-              height={100}
-            />
+            <Image src="/images/logo.png" alt="Logo" width={180} height={100} />
           </Link>
-          <button className="mobile-menu-btn">
-            <FaBars />
+
+          {/* Nút menu trên mobile */}
+          <button className="mobile-menu-btn" onClick={toggleMobileMenu}>
+            {isMobileMenuOpen ? <FaTimes /> : <FaBars />}
           </button>
-          <div className="nav-links">
-            <Link href="/" className="logo mobile">
+
+          {/* Menu trên mobile */}
+          <div className={`nav-links ${isMobileMenuOpen ? "open" : ""}`}>
+            {/* <Link href="/" className="logo mobile">
               <Image
                 src="/images/logo.png"
-                alt=" Logo"
+                alt="Logo"
                 width={150}
                 height={50}
               />
-            </Link>
+            </Link> */}
             <div className="dropdown">
               <Link
                 href="/services"
                 style={{ display: "flex", alignItems: "center", gap: "5px" }}
               >
-                Dịch vụ vận chuyển <CgChevronDown color="white " />
+                Dịch vụ vận chuyển <CgChevronDown color="white" />
               </Link>
               <div className="dropdown-menu">
                 <Link href="/services">Vận chuyển xe ô tô</Link>
