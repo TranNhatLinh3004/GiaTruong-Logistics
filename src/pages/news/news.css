@@ -264,6 +264,9 @@
 }
 
 @media (max-width: 768px) {
+    .news-card {
+        height: auto;
+    }
     .news-card img {
         height: 130px;
         width: 130px;
