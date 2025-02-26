@@ -107,11 +107,13 @@ function News(props) {
               <article className="news-card" key={news.id}>
                 <img src={news.image} alt={news.title} />
                 <div className="news-content">
-                  <div className="news-meta">
+                  <div className="news-meta hidden md:block">
                     <span>{news.date}</span>
                     <span>{news.category}</span>
                   </div>
-                  <h3 className="news-title">{news.title}</h3>
+                  <h3 className="news-title line-clamp-2 md:line-clamp-3">
+                    {news.title}
+                  </h3>
                   <p className="news-excerpt line-clamp-2 md:line-clamp-3">
                     {news.excerpt}
                   </p>
