@@ -200,8 +200,8 @@ function About(props) {
             </div>
           </div>
         </section>
-        <section class="section-map w-full pr-[120px] pl-[120px]">
-          <h2>Chi nhánh Gia Trường Star</h2>
+        <section class="section-map w-full pr-[120px] pl-[120px] flex justify-center items-center flex-col">
+          <h2 class="uppercase">Chi nhánh Gia Trường Star</h2>
           <iframe
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11141.183999418374!2d108.61333392988631!3d15.42982849589794!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3169c7d96f382d1f%3A0x8e60ba4383a44609!2zQ8OUTkcgVFkgQ-G7lCBQSOG6pk4gR0lBIFRSxq_hu5xORyBTVEFSIChHSUEgVFLGr-G7nE5HIExPR0lTVElDUyk!5e1!3m2!1svi!2s!4v1739865074260!5m2!1svi!2s "
             width="100% "

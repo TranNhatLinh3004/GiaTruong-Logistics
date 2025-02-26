@@ -235,4 +235,8 @@
     .thumbnail {
         height: 60px;
     }
+    .how-it-works {
+        display: flex;
+        flex-direction: column;
+    }
 }
