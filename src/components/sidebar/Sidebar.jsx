@@ -33,7 +33,7 @@ function Sidebar() {
   ];
 
   return (
-    <aside className="w-80 rounded-lg p-4 shadow-sm">
+    <aside className="w-80 rounded-lg p-4 shadow-sm hidden md:block">
       {/* Search Section */}
       <div className="mb-8 bg-white rounded-lg p-4">
         <h2 className="text-lg font-medium mb-4 border-b-2 border-red-500">
