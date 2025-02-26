@@ -225,6 +225,13 @@
     margin: 0 auto;
 }
 
+.section-map h2 {
+    font-size: 1.5rem;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+    color: #fff;
+}
+
 @media (max-width: 768px) {
     .achievement-section {
         flex-direction: column;
