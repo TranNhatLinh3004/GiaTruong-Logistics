@@ -265,7 +265,8 @@
 
 @media (max-width: 768px) {
     .news-card img {
-        height: 180px;
+        height: 130px;
+        width: 130px;
     }
     .slide img {
         height: 300px;
