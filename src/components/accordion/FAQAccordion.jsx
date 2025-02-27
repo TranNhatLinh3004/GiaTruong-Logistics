@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import AccordionItem from "../accordionitem/AccordionItem ";
 
 function FAQAccordion(props) {
-  const [openIndex, setOpenIndex] = useState(2);
+  const [openIndex, setOpenIndex] = useState(null);
 
   const toggleAccordion = (index) => {
     setOpenIndex(openIndex === index ? null : index);
