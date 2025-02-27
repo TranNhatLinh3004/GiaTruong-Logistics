@@ -111,7 +111,7 @@ function Services(props) {
               </p>
 
               {/* Image Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 mb-8 h-80">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:mb-8 h-80  mb-[75%]">
                 {/* Ảnh lớn bên trái */}
                 <div className="h-80 relative">
                   <img
