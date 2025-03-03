@@ -1,6 +1,8 @@
 import Layout from "@/components/Layout";
 import React, { useState, useEffect } from "react";
 import "./about.css";
+import Link from "next/link";
+
 function About(props) {
   const images = ["/images/xe3.jpg", "/images/Banner4.jpg", "/images/cang.jpg"];
   const [currentIndex, setCurrentIndex] = useState(0);
@@ -22,25 +24,41 @@ function About(props) {
   return (
     <Layout>
       <main>
-        <div
-          className="hero h-[300px] flex justify-center items-center flex-col"
+        <section
+          className="hero h-[560px] flex justify-center items-center flex-col "
           //   style="background: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.7)), url(https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2) center / cover;"
           style={{
             backgroundImage:
-              "url(https://images.pexels.com/photos/1427107/pexels-photo-1427107.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)",
+              "url(https://images.pexels.com/photos/20712618/pexels-photo-20712618/free-photo-of-h-i-c-ng-c-n-c-u-hang-hoa-h-p-d-ng.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)",
             backgroundSize: "cover",
             backgroundPosition: "center",
             backgroundRepeat: "no-repeat",
           }}
         >
-          <h1 className="text-4xl text-white mb-4">VỀ CHÚNG TÔI</h1>
-          <p className="text-[20px] text-white ">
-            Tối ưu- An toàn- Nhanh chóng
+          <h1
+            style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
+            className="text-4xl text-white mb-4  "
+            data-aos="fade-right"
+          >
+            VỀ CHÚNG TÔI
+          </h1>
+          <p
+            style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
+            className="text-[20px] text-white "
+            data-aos="fade-right"
+          >
+            <Link href="/" className="text-white ">
+              Trang chủ
+            </Link>{" "}
+            /{" "}
+            <Link href="/" className="text-white font-bold">
+              Về chúng tôi
+            </Link>
           </p>
-        </div>
+        </section>
 
         <section class="achievement-section">
-          <div class="achievement-content">
+          <div class="achievement-content" data-aos="fade-right">
             <h2 class="text-[25px]">Giới thiệu về Công ty</h2>
             <p className="text-[18px]">
               Gia Trường Star là đơn vị hàng đầu trong lĩnh vực vận tải và
@@ -153,7 +171,7 @@ function About(props) {
             </div>
           </div>
         </section>
-        <section class="how-it-works">
+        <section class="how-it-works" data-aos="fade-up">
           <div class="video-section">
             <h2 className="uppercase">Quy trình làm việc</h2>
             <div class="play-button">

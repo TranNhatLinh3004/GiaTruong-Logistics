@@ -3,7 +3,7 @@
 main {
     /* padding: 0 150px; */
     position: relative;
-    top: 5.4rem;
+    margin-top: 10.9rem;
 }
 
 .banner-container {
@@ -423,7 +423,7 @@ main {
 .section-news {
     background-color: transparent !important;
     padding: 3rem 150px;
-    margin-bottom: 10rem;
+    /* margin-bottom: 10rem; */
 }
 
 .section-news:hover button {
