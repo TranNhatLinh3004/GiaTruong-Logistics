@@ -19,7 +19,7 @@ const services = [
     description:
       "Hơn 50 đầu xe cứu hộ đáp ứng mọi nhu cầu. Vận chuyển chuyên nghiệp, nhanh chóng, an toàn.",
     image:
-      "https://images.pexels.com/photos/11087837/pexels-photo-11087837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+      "https://images.pexels.com/photos/3057960/pexels-photo-3057960.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
   },
   {
     id: 3,
@@ -55,7 +55,7 @@ const ServiceSlider = () => {
   };
 
   return (
-    <section className="services-section">
+    <section className="services-section" data-aos="fade-up">
       <div className="section-header text-center">
         <h2 className="section-title">CÁC DỊCH VỤ VẬN CHUYỂN HÀNG HÓA</h2>
         <p className="section-subtitle">

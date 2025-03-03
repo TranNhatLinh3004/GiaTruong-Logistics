@@ -35,11 +35,11 @@ const BannerSlider = () => {
   ];
 
   return (
-    <div className="group relative w-full h-[550px]">
+    <div className="group relative w-full h-[560px]">
       {/* Slider */}
       <Slider ref={sliderRef} {...settings} className="w-full">
         {images.map((image, index) => (
-          <div key={index} className="relative w-full h-[550px]">
+          <div key={index} className="relative w-full h-[560px]">
             <Image
               src={image.src}
               alt={image.alt}

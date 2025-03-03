@@ -15,7 +15,7 @@ export default function Home() {
         <BannerSlider />
 
         <section class="freight-section ">
-          <div class="content-wrapper ">
+          <div class="content-wrapper " data-aos="fade-right">
             <h2 class="section-title ">TẠI SAO CHỌN VẬN TẢI GIA TRƯỜNG </h2>
             <div class="section-line "></div>
             <p class="section-description ">

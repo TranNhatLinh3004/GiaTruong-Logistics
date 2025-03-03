@@ -3,6 +3,7 @@
 main {
     /* padding: 0 150px; */
     position: relative;
+    top: 5.4rem;
 }
 
 .banner-container {
@@ -256,9 +257,10 @@ main {
 .services-section {
     padding: 80px 5%;
     background: #1a1a1a url("https://c4.wallpaperflare.com/wallpaper/888/200/919/earth-black-background-world-map-the-continent-wallpaper-preview.jpg") repeat;
-    position: relative;
     background-size: cover;
     background-position: center;
+    background-attachment: fixed !important;
+    position: relative;
 }
 
 .services-section .section-header {
@@ -275,7 +277,7 @@ main {
 
 .section-subtitle {
     font-size: 1.1em;
-    color: #ccc;
+    color: #9f9e9e;
 }
 
 .new-slider {
@@ -400,6 +402,7 @@ main {
     align-items: center;
     width: 100%;
     padding: 3rem 150px;
+    background: #f0f0f0;
 }
 
 .section-map iframe {
@@ -411,7 +414,7 @@ main {
     font-size: 1.5rem;
     margin-bottom: 20px;
     text-transform: uppercase;
-    color: white;
+    color: black;
 }
 
 
@@ -420,6 +423,7 @@ main {
 .section-news {
     background-color: transparent !important;
     padding: 3rem 150px;
+    margin-bottom: 10rem;
 }
 
 .section-news:hover button {
@@ -441,12 +445,17 @@ main {
 .section-news h2 {
     font-size: 1.5rem;
     margin-bottom: 1rem;
-    color: white;
+    color: black;
 }
 
 @media (max-width: 768px) {
     html {
         font-size: 12px;
+    }
+    main {
+        /* padding: 0 150px; */
+        position: relative;
+        top: 4rem;
     }
     /* header {
         position: fixed;
