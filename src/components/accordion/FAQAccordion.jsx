@@ -56,7 +56,7 @@ function FAQAccordion(props) {
         nghiệm với những giải đáp sau đây:
       </p>
 
-      <div className="border border-gray-200 rounded-lg overflow-hidden">
+      <div className="border border-gray-200  overflow-hidden">
         {faqItems.map((item, index) => (
           <AccordionItem
             key={index}
