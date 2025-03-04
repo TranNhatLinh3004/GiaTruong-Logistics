@@ -50,7 +50,7 @@ function FAQAccordion(props) {
         Các câu hỏi thường gặp khi dùng dịch vụ vận chuyển ô tô từ miền Bắc đến
         miền Nam
       </h1>
-      <p className="mb-8 text-white text-[18px]">
+      <p className="mb-8 text-black text-[18px]">
         Khi quyết định sử dụng dịch vụ vận tải xe ô tô đi Bắc Nam, Hẳn khách
         hàng sẽ đặt ra những câu hỏi khác nhau. Vậy nên, hãy nắm ngay kinh
         nghiệm với những giải đáp sau đây:

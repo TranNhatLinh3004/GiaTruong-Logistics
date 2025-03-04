@@ -22,7 +22,7 @@ function AccordionItem({ title, children, isOpen, onClick }) {
           isOpen ? "max-h-96 opacity-100" : "max-h-0 opacity-0"
         }`}
       >
-        <div className="p-4  text-[18px] text-white">{children}</div>
+        <div className="p-4  text-[18px] text-black">{children}</div>
       </div>
     </div>
   );
