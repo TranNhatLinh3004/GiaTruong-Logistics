@@ -73,16 +73,18 @@ function Services(props) {
     <Layout>
       <main>
         <header
-          className="page-header services"
+          className="page-header services h-[560px] flex justify-center items-center flex-col "
           style={{
             backgroundImage: `url(https://images.pexels.com/photos/1004409/pexels-photo-1004409.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2)`,
             backgroundSize: "cover",
           }}
         >
-          <h1 className="text-white text-4xl uppercase">
+          <h1 className="text-white text-4xl uppercase" data-aos="fade-right">
             Vận chuyển xe ô tô Bắc Nam{" "}
           </h1>
-          <p className="text-[20px]">Chuyên nghiệp – Uy tín – Giá tốt</p>
+          <p className="text-[20px]" data-aos="fade-right">
+            Chuyên nghiệp – Uy tín – Giá tốt
+          </p>
         </header>
 
         <div className="container-fluid mt-2rem flex">
@@ -94,7 +96,7 @@ function Services(props) {
               </h1>
 
               {/* Description */}
-              <p className="text-white mb-8  text-[18px] leading-7">
+              <p className="text-black mb-8  text-[18px] leading-7">
                 - An toàn và đảm bảo: Xe của bạn sẽ được bảo vệ tối đa, vận
                 chuyển bằng xe chuyên dụng, có bạt che chắn kỹ lưỡng.
                 <br />
@@ -139,7 +141,7 @@ function Services(props) {
                 Hình thức vận chuyển
               </h1>
 
-              <p className="text-white mb-8  text-[18px] leading-7">
+              <p className="text-black mb-8  text-[18px] leading-7">
                 - Vận chuyển bằng xe lồng chuyên dụng: Đảm bảo an toàn cao, giảm
                 thiểu rủi ro.
                 <br />
