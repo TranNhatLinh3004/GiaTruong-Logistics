@@ -2,6 +2,7 @@ import Layout from "@/components/Layout";
 import React, { useState, useEffect } from "react";
 import "./about.css";
 import Link from "next/link";
+import DevelopmentTimeline from "@/components/slider/DevelopmentTimeline";
 
 function About(props) {
   const images = ["/images/xe3.jpg", "/images/Banner4.jpg", "/images/cang.jpg"];
@@ -229,6 +230,8 @@ function About(props) {
             referrerpolicy="no-referrer-when-downgrade "
           ></iframe>
         </section>
+
+        <DevelopmentTimeline />
       </main>
     </Layout>
   );
