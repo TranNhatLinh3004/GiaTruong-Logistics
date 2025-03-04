@@ -43,7 +43,10 @@ function FAQAccordion(props) {
 
   return (
     <div className="w-full max-w-4xl mx-auto pl-6">
-      <h1 className="text-3xl font-bold mb-2 text-[#fbab24]">
+      <h1
+        className="text-3xl font-bold mb-2 text-[#fbab24]"
+        data-aos="fade-right"
+      >
         Các câu hỏi thường gặp khi dùng dịch vụ vận chuyển ô tô từ miền Bắc đến
         miền Nam
       </h1>

@@ -91,7 +91,10 @@ function Services(props) {
           <main className="main-content">
             <div className="max-w-6xl mx-auto p-6">
               {/* Header */}
-              <h1 className="text-3xl font-bold text-[#fbab24] mb-2">
+              <h1
+                className="text-3xl font-bold text-[#fbab24] mb-2"
+                data-aos="fade-right"
+              >
                 Tại sao nên chọn dịch vụ của chúng tôi?
               </h1>
 
@@ -137,7 +140,10 @@ function Services(props) {
                   />
                 </div>
               </div>
-              <h1 className="text-3xl font-bold text-[#fbab24] mb-2">
+              <h1
+                className="text-3xl font-bold text-[#fbab24] mb-2"
+                data-aos="fade-right"
+              >
                 Hình thức vận chuyển
               </h1>
 
