@@ -189,33 +189,54 @@ function About(props) {
 
           <div class="steps-section">
             <div class="step" id="step1">
-              <div class="step-number">1</div>
-              <h4 className="uppercase ">Dịch vụ chính</h4>
-              <p className="text-start h-[50%]">
-                <br />- Vận chuyển hàng hóa nhanh chóng, an toàn.
-                <br />- Dịch vụ logistics trọn gói, tối ưu chi phí. <br />- Quản
-                lý, giám sát hành trình bằng công nghệ tiên tiến.
-              </p>
+              <div className="step-title">
+                <h3 class="step-number">1</h3>
+                <h4>Dịch vụ chính</h4>
+              </div>
+              <div class="step-content">
+                <div class="step-number">1</div>
+                <h4>Dịch vụ chính</h4>
+
+                <div className="step-text">
+                  <p>- Vận chuyển hàng hóa nhanh chóng, an toàn.</p>
+                  <p> - Dịch vụ logistics trọn gói, tối ưu chi phí.</p>
+                  <p>
+                    - Quản lý, giám sát hành trình bằng công nghệ tiên tiến.
+                  </p>
+                </div>
+              </div>
             </div>
 
             <div class="step" id="step2">
-              <div class="step-number">2</div>
-              <h4 className="uppercase  ">Phương tiện & Cơ sở vật chất</h4>
-              <p className="text-start h-[45%]">
-                - Đầu tư, nâng cấp phương tiện. <br />
-                - Bảo trì, bảo dụng định kỳ. <br />- Giám sát hành trình, đảm
-                bảo an toàn.
-              </p>
+              <div className="step-title">
+                <h3 class="step-number">2</h3>
+                <h4>Phương tiện & Cơ sở vật chất</h4>
+              </div>
+              <div class="step-content">
+                <div class="step-number">2</div>
+                <h4>Phương tiện & Cơ sở vật chất</h4>
+
+                <div className="step-text">
+                  <p>- Đầu tư, nâng cấp phương tiện.</p>
+                  <p>- Bảo trì, bảo dụng định kỳ.</p>
+                  <p>- Giám sát hành trình, đảm bảo an toàn.</p>
+                </div>
+              </div>
             </div>
 
             <div class="step" id="step3">
-              <div class="step-number">3</div>
-              <h4 className="uppercase"> Chăm sóc khách hàng</h4>
-              <p className="text-start h-[50%]">
-                <br />
-                - 3 tổng kho & 2 văn phòng trên toàn quốc. <br />- Phục vụ tận
-                tình 24/24.
-              </p>
+              <div className="step-title">
+                <h3 class="step-number">3</h3>
+                <h4>Chăm sóc khách hàng</h4>
+              </div>
+              <div class="step-content">
+                <div class="step-number">3</div>
+                <h4>Chăm sóc khách hàng</h4>
+                <div className="step-text">
+                  <p>- 3 tổng kho & 2 văn phòng trên toàn quốc.</p>
+                  <p>- Phục vụ tận tình 24/24.</p>
+                </div>
+              </div>
             </div>
           </div>
         </section>
