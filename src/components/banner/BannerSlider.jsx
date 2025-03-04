@@ -49,7 +49,8 @@ const BannerSlider = () => {
             />
             <div className="absolute inset-0 bg-black/20 flex items-center justify-center">
               <h1
-                className="text-white text-4xl font-bold text-center textShadow-md"
+                style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
+                className="text-white text-4xl font-bold text-center "
                 dangerouslySetInnerHTML={{
                   __html: image.title.replace(/\n/g, "<br>"),
                 }}
