@@ -42,7 +42,7 @@ function FAQAccordion(props) {
   ];
 
   return (
-    <div className="w-full max-w-4xl mx-auto pl-6">
+    <div className="w-full max-w-4xl  pl-6 pb-14">
       <h1
         className="text-3xl font-bold mb-2 text-[#fbab24]"
         data-aos="fade-right"

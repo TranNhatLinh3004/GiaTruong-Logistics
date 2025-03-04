@@ -87,9 +87,9 @@ function Services(props) {
           </p>
         </header>
 
-        <div className="container-fluid mt-2rem flex">
-          <main className="main-content">
-            <div className="max-w-6xl mx-auto p-6">
+        <div className="w-full mt-2rem flex pl-[120px] pr-[120px] pt-10">
+          <main className="main-content w-full">
+            <div className="max-w-[100%] mx-auto p-6">
               {/* Header */}
               <h1
                 className="text-3xl font-bold text-[#fbab24] mb-2"
@@ -99,7 +99,7 @@ function Services(props) {
               </h1>
 
               {/* Description */}
-              <p className="text-black mb-8  text-[18px] leading-7">
+              <p className="text-black mb-8 text-[18px] leading-7">
                 - An toàn và đảm bảo: Xe của bạn sẽ được bảo vệ tối đa, vận
                 chuyển bằng xe chuyên dụng, có bạt che chắn kỹ lưỡng.
                 <br />
@@ -116,7 +116,7 @@ function Services(props) {
               </p>
 
               {/* Image Grid */}
-              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:mb-8 h-80  mb-[75%]">
+              <div className="grid grid-cols-1 md:grid-cols-2 gap-4 md:mb-8 h-80 mb-[75%]">
                 {/* Ảnh lớn bên trái */}
                 <div className="h-80 relative">
                   <img
@@ -131,7 +131,7 @@ function Services(props) {
                   <img
                     src="/images/xe6.jpg"
                     alt="Forklift Operations"
-                    className="w-full h-full object-cover rounded-lg "
+                    className="w-full h-full object-cover rounded-lg"
                   />
                   <img
                     src="/images/nhanvien.jpg"
@@ -140,6 +140,8 @@ function Services(props) {
                   />
                 </div>
               </div>
+
+              {/* Header */}
               <h1
                 className="text-3xl font-bold text-[#fbab24] mb-2"
                 data-aos="fade-right"
@@ -147,7 +149,7 @@ function Services(props) {
                 Hình thức vận chuyển
               </h1>
 
-              <p className="text-black mb-8  text-[18px] leading-7">
+              <p className="text-black mb-2 text-[18px] leading-7">
                 - Vận chuyển bằng xe lồng chuyên dụng: Đảm bảo an toàn cao, giảm
                 thiểu rủi ro.
                 <br />
@@ -159,26 +161,6 @@ function Services(props) {
                 <br />- Vận chuyển bằng tàu hỏa: Chi phí thấp, an toàn, thời
                 gian ổn định.
               </p>
-
-              {/* Info Cards */}
-              {/* <div className="grid grid-cols-1  gap-6">
-                {infoItems.map((item, index) => (
-                  <div
-                    key={index}
-                    className="flex gap-4 p-4 rounded-lg shadow-sm"
-                  >
-                    <div className="text-orange-500">{item.icon}</div>
-                    <div>
-                      <h3 className="font-semibold text-white text-[18px] mb-2">
-                        {item.title}
-                      </h3>
-                      <p className=" text-white text-[18px]">
-                        {item.description}
-                      </p>
-                    </div>
-                  </div>
-                ))}
-              </div> */}
             </div>
 
             <FAQAccordion />
