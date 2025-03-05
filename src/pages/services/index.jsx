@@ -87,7 +87,7 @@ function Services(props) {
           </p>
         </header>
 
-        <div className="w-full mt-2rem flex pl-[120px] pr-[120px] pt-10">
+        <div className="w-full mt-2rem flex pl-[20px] pr-[20px]  md:pl-[120px] md:pr-[120px]  pt-10">
           <main className="main-content w-full">
             <div className="max-w-[100%] mx-auto p-6">
               {/* Header */}
