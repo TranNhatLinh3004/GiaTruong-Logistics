@@ -111,7 +111,8 @@ header {
     position: relative;
 }
 
-.nav-links a {
+
+/* .nav-links a {
     color: white;
     text-decoration: none;
     font-weight: 500;
@@ -121,6 +122,34 @@ header {
 
 .nav-links a:hover {
     border-bottom: 2px solid rgb(251, 171, 24);
+} */
+
+.nav-links a {
+    position: relative;
+    display: inline-block;
+    padding: 10px 15px;
+    color: white;
+    text-decoration: none;
+}
+
+.nav-links a::after {
+    content: "";
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    /* Điều chỉnh khoảng cách giữa text và underline */
+    width: 0;
+    height: 2px;
+    background-color: rgb(251, 171, 24);
+    transition: width 0.3s ease-in-out;
+}
+
+.nav-links a:hover::after {
+    width: 100%;
+}
+
+.nav-links .track-order:hover::after {
+    width: 0% !important;
 }
 
 
@@ -177,7 +206,6 @@ header {
     text-decoration: none;
     display: flex;
     justify-content: center;
-    width: 100px;
 }
 
 .track-order:hover {
