@@ -13,10 +13,7 @@ import {
 const NewsDetail = () => {
   return (
     <Layout>
-      <div
-        className="py-8 w-full bg-white px-8 md:px-28 mt-44"
-        style={{ marginTop: "200px" }}
-      >
+      <div className="py-8 w-full bg-white px-8 md:px-28 mt-44 wrapper-news">
         {/* Category + Date */}
         <div className="flex items-center gap-4 mb-6">
           <span className="bg-blue-100 text-blue-600 px-3 py-1 rounded-full text-sm font-medium">

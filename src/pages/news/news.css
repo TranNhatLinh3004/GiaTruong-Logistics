@@ -254,6 +254,10 @@
     margin-top: 0;
 }
 
+.wrapper-news {
+    margin-top: 200px;
+}
+
 @media (max-width: 992px) {
     .container {
         flex-direction: column;
@@ -264,6 +268,9 @@
 }
 
 @media (max-width: 768px) {
+    .wrapper-news {
+        margin-top: 100px;
+    }
     .news-card {
         height: auto;
     }
