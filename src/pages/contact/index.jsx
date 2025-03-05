@@ -5,10 +5,19 @@ import { FaPhone, FaClock, FaHeadset } from "react-icons/fa";
 function Contact(props) {
   return (
     <Layout>
-      <main>
+      <main className="contact mt-32 md:mt-40">
         <div class="hero">
-          <h1>LIÊN HỆ VỚI CHÚNG TÔI</h1>
-          <p className="text-[18px]">
+          <h1
+            data-aos="fade-right"
+            style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
+          >
+            LIÊN HỆ VỚI CHÚNG TÔI
+          </h1>
+          <p
+            className="text-[18px]"
+            data-aos="fade-right"
+            style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.5)" }}
+          >
             Thông tin liên hệ chính thức của Công ty Vận Tải Gia Trường Star
           </p>
         </div>
@@ -22,7 +31,7 @@ function Contact(props) {
             mong được hợp tác và phục vụ quý khách hàng trong thời gian tới.
           </p>
         </div>
-        <div className="contact-section bg-transparent">
+        <div className="contact-section bg-transparent" data-aos="fade-up">
           <div className="contact-form">
             <h2>GỬI TIN NHẮN CHO CHÚNG TÔI</h2>
             <form>
@@ -54,14 +63,14 @@ function Contact(props) {
 
           <div className="contact-icon">
             <div className="info-item flex gap-4">
-              <FaPhone size={44} color="white" />
+              <FaPhone size={44} color="black" />
               <div className="info-text">
                 <h3>Hotline</h3>
                 <p>0852.563.325</p>
               </div>
             </div>
             <div className="info-item flex gap-4">
-              <FaClock size={44} color="white" />
+              <FaClock size={44} color="black" />
               <div className="info-text">
                 <h3>Thời gian</h3>
                 <p>Hỗ trợ Quý khách 24/24h</p>
@@ -69,7 +78,7 @@ function Contact(props) {
               </div>
             </div>
             <div className="info-item flex gap-4">
-              <FaHeadset size={44} color="white" />
+              <FaHeadset size={44} color="black" />
               <div className="info-text">
                 <h3>Liên hệ ngay với chúng tôi</h3>
                 <p>Nhận tư vấn và hỗ trợ tốt nhất</p>
@@ -77,8 +86,8 @@ function Contact(props) {
             </div>
           </div>
         </div>
-        <section class="section-map w-full pr-[120px] pl-[120px] mb-20 mt-32">
-          <h2 className="text-center text-2xl font-bold mb-4 text-white uppercase">
+        <section class="section-map w-full pr-[120px] pl-[120px] mb-20 mt-16 md:mt-32">
+          <h2 className="text-center text-2xl font-bold mb-4 text-black uppercase">
             Chi nhánh Gia Trường Star
           </h2>
           <iframe

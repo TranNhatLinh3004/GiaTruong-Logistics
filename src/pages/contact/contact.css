@@ -33,13 +33,13 @@
 }
 
 .description p {
-    color: white;
+    color: black;
     line-height: 1.5rem;
 }
 
 .contact-section {
     max-width: 1350px;
-    margin: 40px auto;
+    margin: 0px auto 40px;
     padding: 0 20px;
     display: flex;
     gap: 40px;
@@ -51,7 +51,7 @@
 
 .contact-form h2 {
     margin: 2rem 0;
-    color: white;
+    color: black;
 }
 
 .contact-icon {
@@ -62,13 +62,13 @@
 }
 
 .contact-icon i {
-    color: white;
+    color: black;
     font-size: 3.5rem;
     margin-right: 1rem;
 }
 
 .contact-icon h3 {
-    color: white;
+    color: black;
 }
 
 .form-group {
@@ -128,6 +128,9 @@
 }
 
 @media (max-width: 768px) {
+    .description {
+        margin: 2rem 20px;
+    }
     .contact-section {
         flex-direction: column;
     }
