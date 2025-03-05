@@ -2,7 +2,7 @@
     background: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url("https://images.pexels.com/photos/5673488/pexels-photo-5673488.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2") center/cover;
     color: white;
     padding: 80px 20px;
-    height: 350px;
+    height: 450px;
     text-align: center;
     display: flex;
     flex-direction: column;
@@ -62,7 +62,7 @@
 }
 
 .job-title {
-    color: rgb(251, 171, 24);
+    color: rgb(18 34 59);
     font-size: 1.3em;
 }
 
@@ -78,7 +78,7 @@
     display: flex;
     gap: 30px;
     margin-bottom: 20px;
-    color: white;
+    color: black;
 }
 
 .job-detail {
@@ -89,12 +89,12 @@
 
 .job-description {
     line-height: 1.6;
-    color: #ddd;
+    color: black;
     margin-bottom: 20px;
 }
 
 .apply-button {
-    background-color: rgb(251, 171, 24);
+    background-color: rgb(18 34 59);
     color: white;
     padding: 12px 30px;
     border: none;
@@ -104,7 +104,7 @@
 }
 
 .apply-button:hover {
-    background-color: #ff5722;
+    background-color: rgb(251, 171, 24);
 }
 
 .application-modal {

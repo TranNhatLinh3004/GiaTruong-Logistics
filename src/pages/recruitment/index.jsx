@@ -44,10 +44,10 @@ function Recruitment(props) {
   ];
   return (
     <Layout>
-      <main>
+      <main className="mt-32 md:mt-40">
         <div className="hero-section">
-          <h1>Cơ Hội Nghề Nghiệp</h1>
-          <p className="text-[18px]">
+          <h1 data-aos="fade-right">Cơ Hội Nghề Nghiệp</h1>
+          <p className="text-[18px]" data-aos="fade-right">
             Hãy tham gia đội ngũ của chúng tôi và cùng nhau phát triển trong
             ngành logistics. Chúng tôi luôn tìm kiếm những người tài năng và đam
             mê.
@@ -75,9 +75,16 @@ function Recruitment(props) {
             </select>
           </div>
 
-          <div className="jobs-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-6 ">
+          <div
+            className="jobs-grid grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3  gap-6 "
+            data-aos="fade-up"
+          >
             {jobs.map((job) => (
-              <div className="job-card" key={job.id}>
+              <div
+                className="job-card"
+                key={job.id}
+                style={{ boxShadow: "0 0.5rem 1rem rgba(0, 0, 0, 0.15)" }}
+              >
                 <div className="job-header">
                   <h2 className="job-title">{job.title}</h2>
                   <span className="job-type">{job.type}</span>
