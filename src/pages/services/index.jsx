@@ -79,7 +79,10 @@ function Services(props) {
             backgroundSize: "cover",
           }}
         >
-          <h1 className="text-white text-4xl uppercase" data-aos="fade-right">
+          <h1
+            className="text-white text-4xl uppercase text-center"
+            data-aos="fade-right"
+          >
             Vận chuyển xe ô tô Bắc Nam{" "}
           </h1>
           <p className="text-[20px]" data-aos="fade-right">
