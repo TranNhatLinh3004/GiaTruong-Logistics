@@ -33,10 +33,13 @@ function Sidebar() {
   ];
 
   return (
-    <aside className="w-80 rounded-lg p-4 shadow-sm hidden md:block">
+    <aside
+      className="w-80 rounded-lg p-4 shadow-sm hidden md:block"
+      style={{ boxShadow: "0 4px 4px 1px #ededed", height: "100%" }}
+    >
       {/* Search Section */}
       <div className="mb-8 bg-white rounded-lg p-4">
-        <h2 className="text-lg font-medium mb-4 border-b-2 border-red-500">
+        <h2 className="text-lg font-bold mb-4 border-b-2 border-red-500">
           Tìm kiếm
         </h2>
         <div className="flex gap-2">
@@ -50,10 +53,10 @@ function Sidebar() {
           </button>
         </div>
       </div>
-
+      <hr />
       {/* Categories Section */}
       <div className="mb-8 bg-white rounded-lg p-4">
-        <h2 className="text-lg font-medium mb-4 border-b-2 border-red-500">
+        <h2 className="text-lg font-bold mb-4 border-b-2 border-red-500">
           Danh mục
         </h2>
         <ul className="space-y-2">
@@ -67,13 +70,13 @@ function Sidebar() {
           ))}
         </ul>
       </div>
-
+      <hr />
       {/* Recent Posts Section */}
       <div className="mb-8 bg-white rounded-lg p-4">
-        <h2 className="text-lg font-medium mb-4 border-b-2 border-red-500">
+        <h2 className="text-lg font-bold mb-4 border-b-2 border-red-500">
           Bài viết nổi bật
         </h2>
-        <div className="space-y-4">
+        <div className="space-y-4" data-aos="flip-right">
           {recentPosts.map((post, index) => (
             <article key={index} className="flex gap-3">
               <img
@@ -93,10 +96,10 @@ function Sidebar() {
           ))}
         </div>
       </div>
-
+      <hr />
       {/* Tags Section */}
       <div className="mb-8 bg-white rounded-lg p-4">
-        <h2 className="text-lg font-medium mb-4 border-b-2 border-red-500">
+        <h2 className="text-lg font-bold mb-4 border-b-2 border-red-500">
           Tags
         </h2>
         <div className="flex flex-wrap gap-2">
