@@ -79,8 +79,11 @@ function News(props) {
   };
   return (
     <Layout>
-      <main class="main-content flex pl-8 pr-8  md:pl-[120px] md:pr-[120px] mb-20">
-        <div className="">
+      <main
+        class="w-full mt-2rem flex pl-[120px] pr-[120px] pt-10"
+        style={{ marginTop: "200px", marginBottom: "100px" }}
+      >
+        <div className="w-full ">
           <div class="featured-news">
             <div class="slide active">
               <img
