@@ -89,7 +89,7 @@ function Services(props) {
 
         <div className="w-full mt-2rem flex pl-[20px] pr-[20px]  md:pl-[120px] md:pr-[120px]  pt-10">
           <main className="main-content w-full">
-            <div className="max-w-[100%] mx-auto p-6">
+            <div className="max-w-[100%] mx-auto p-0 md:p-6">
               {/* Header */}
               <h1
                 className="text-3xl font-bold text-[#fbab24] mb-2"
