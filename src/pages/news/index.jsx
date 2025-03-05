@@ -79,10 +79,7 @@ function News(props) {
   };
   return (
     <Layout>
-      <main
-        class="w-full mt-2rem flex pl-[120px] pr-[120px] pt-10"
-        style={{ marginTop: "200px", marginBottom: "100px" }}
-      >
+      <main class="w-full mt-2rem flex pl-[20px] pr-[20px]  md:pl-[120px] md:pr-[120px] pt-10  wrapper-news">
         <div className="w-full ">
           <div class="featured-news">
             <div class="slide active">

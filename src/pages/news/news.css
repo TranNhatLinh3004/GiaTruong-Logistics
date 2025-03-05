@@ -256,6 +256,7 @@
 
 .wrapper-news {
     margin-top: 200px;
+    margin-bottom: 100px;
 }
 
 @media (max-width: 992px) {
