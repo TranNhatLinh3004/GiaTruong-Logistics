@@ -10,24 +10,21 @@ const services = [
     title: "DỊCH VỤ CỨU HỘ XE Ô TÔ",
     description:
       "Hơn 50 đầu xe cứu hộ, cùng trang thiết bị đầy đủ, hỗ trợ 24/7 khắc phục mọi sự cố ô tô.",
-    image:
-      "https://images.pexels.com/photos/11087837/pexels-photo-11087837.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image: "/images/cuuho.jpg",
   },
   {
     id: 2,
     title: "DỊCH VỤ TRUNG CHUYỂN XE Ô TÔ",
     description:
       "Hơn 50 đầu xe cứu hộ đáp ứng mọi nhu cầu. Vận chuyển chuyên nghiệp, nhanh chóng, an toàn.",
-    image:
-      "https://images.pexels.com/photos/3057960/pexels-photo-3057960.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image: "/images/xe3.jpg",
   },
   {
     id: 3,
     title: "DỊCH VỤ VẬN CHUYỂN HÀNG NẶNG, CÔNG KỀNH",
     description:
       "Vận chuyển các loại hàng có trọng lượng nặng, kích thước lớn, cồng kềnh. Đóng hàng đảm bảo an toàn.",
-    image:
-      "https://images.pexels.com/photos/29566901/pexels-photo-29566901/free-photo-of-o-to-d-t-i-c-ng-v-n-chuy-n-cong-nghi-p.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+    image: "/images/xe1.jpg",
   },
 ];
 
