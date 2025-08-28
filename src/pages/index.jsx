@@ -78,7 +78,7 @@ export default function Home() {
                 với chi phí hợp lý nhất.
               </p>
             </div>
-            <span class="section-line "></span>
+            <span class="section-line hidden md:block"></span>
 
             {/* <Link href="/about" class="read-more ">
             Xem thêm
