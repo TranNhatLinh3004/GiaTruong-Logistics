@@ -62,14 +62,14 @@ export default function Home() {
             </div>
           </div> */}
           <div class="content-wrapper pt-10" data-aos="fade-up">
-            <div class="flex gap-4 px-10">
+            <div class="flex gap-0 md:gap-4 px-10 flex-col md:flex-row ">
               <h2
                 class="section-title-black uppercase "
                 style={{ textShadow: "2px 2px 4px rgba(0, 0, 0, 0.2)" }}
               >
                 Nhà cung ứng dịch vụ logistics hàng đầu miền trung việt nam
               </h2>
-              <p class="section-description ">
+              <p class="section-description px-4 md:px-0">
                 Vận Tải Gia Trường không chỉ cung cấp dịch vụ vận chuyển hàng
                 hóa nhanh chóng, an toàn mà còn mang đến giải pháp logistics tối
                 ưu cho mọi nhu cầu của khách hàng. Chúng tôi sở hữu đội xe hiện
