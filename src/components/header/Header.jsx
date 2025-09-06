@@ -62,8 +62,8 @@ const Header = () => {
             <AiOutlineMail /> giatruongstar@giatruonglogics.com
           </span>
           <span>
-            <FaMapMarkerAlt /> Lê Hồng Phong, Khối 4, Thị trấn Núi Thành, Núi
-            Thành, Quảng Nam
+            <FaMapMarkerAlt /> Đường Lê Hồng Phong, Khối 4, Xã Núi Thành, TP Đà
+            Nẵng
           </span>
         </div>
         <div className="social-icons">
