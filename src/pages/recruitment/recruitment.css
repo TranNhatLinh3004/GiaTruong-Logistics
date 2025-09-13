@@ -137,6 +137,14 @@
     margin-bottom: 20px;
 }
 
+.job-description {
+    margin-top: 0.5rem;
+    padding-left: 1.2rem;
+    list-style-type: disc !important;
+    /* dấu chấm gạch đầu dòng */
+    line-height: 1.6;
+}
+
 .close-modal {
     font-size: 24px;
     cursor: pointer;

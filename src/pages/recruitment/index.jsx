@@ -7,39 +7,29 @@ function Recruitment(props) {
   const jobs = [
     {
       id: 1,
-      title: "Tài Xế Container",
-      type: "Toàn thời gian",
-      salary: "15-20 triệu",
-      experience: "2 năm kinh nghiệm",
-      description:
-        "Chúng tôi đang tìm kiếm tài xế container có kinh nghiệm để tham gia đội ngũ vận tải của công ty. Ứng viên cần có bằng lái xe hạng FC và kinh nghiệm lái xe container.",
+      title: "Nhân viên kinh doanh",
+      type: "Số lượng 2",
+      salary: "Lương: Thỏa thuận",
+      experience: "",
+      description: [
+        "Giới tính Nam",
+        "Tốt nghiệp Trung cấp, Cao đẳng, Đại học (ngành kinh tế)",
+        "Ưu tiên: Có kinh nghiệm làm việc trong lĩnh vực Logistics",
+      ],
     },
+
     {
       id: 2,
-      title: "Tài Xế Container",
-      type: "Toàn thời gian",
-      salary: "15-20 triệu",
-      experience: "2 năm kinh nghiệm",
-      description:
-        "Chúng tôi đang tìm kiếm tài xế container có kinh nghiệm để tham gia đội ngũ vận tải của công ty. Ứng viên cần có bằng lái xe hạng FC và kinh nghiệm lái xe container.",
-    },
-    {
-      id: 3,
-      title: "Tài Xế Container",
-      type: "Toàn thời gian",
-      salary: "15-20 triệu",
-      experience: "2 năm kinh nghiệm",
-      description:
-        "Chúng tôi đang tìm kiếm tài xế container có kinh nghiệm để tham gia đội ngũ vận tải của công ty. Ứng viên cần có bằng lái xe hạng FC và kinh nghiệm lái xe container.",
-    },
-    {
-      id: 4,
-      title: "Tài Xế Container",
-      type: "Toàn thời gian",
-      salary: "15-20 triệu",
-      experience: "2 năm kinh nghiệm",
-      description:
-        "Chúng tôi đang tìm kiếm tài xế container có kinh nghiệm để tham gia đội ngũ vận tải của công ty. Ứng viên cần có bằng lái xe hạng FC và kinh nghiệm lái xe container.",
+      title: "Lái xe đầu kéo",
+      type: "Số lượng 50",
+      salary: "Lương: 20-35 triệu",
+      experience: "1-2 năm kinh nghiệm",
+      description: [
+        "Bằng lái hạng FC trở lên",
+        "Có kinh nghiệm lái xe đầu kéo từ 1–2 năm trở lên (ưu tiên)",
+        "Tuổi: 25 – 55",
+        "Lý lịch rõ ràng, không có tiền án tiền sự",
+      ],
     },
   ];
   return (
@@ -64,9 +54,9 @@ function Recruitment(props) {
             </select>
             <select className="filter-select">
               <option value="">Tất cả địa điểm</option>
-              <option value="hanoi">Hà Nội</option>
-              <option value="hcm">TP. Hồ Chí Minh</option>
-              <option value="danang">Đà Nẵng</option>
+              {/* <option value="hanoi">Hà Nội</option> */}
+              {/* <option value="hcm">TP. Hồ Chí Minh</option> */}
+              <option value="quangnam">Quảng Nam</option>
             </select>
             <select className="filter-select">
               <option value="">Tất cả hình thức</option>
@@ -99,7 +89,18 @@ function Recruitment(props) {
                     <span>{job.experience}</span>
                   </div>
                 </div>
-                <p className="job-description">{job.description}</p>
+                <div className="job-description">
+                  <strong>Yêu cầu:</strong>
+                  <ul>
+                    {job.description.map((item, idx) => (
+                      <li key={idx}>- {item}</li>
+                    ))}
+                  </ul>
+                </div>
+                <div className="job-hotline" style={{ marginBottom: "10px" }}>
+                  {" "}
+                  Hotline: Mr. Lương - 0944455945
+                </div>
                 <button className="apply-button" onClick={toggleModal}>
                   Ứng Tuyển Ngay
                 </button>
