@@ -28,7 +28,7 @@ function Recruitment(props) {
       description: [
         "Bằng lái hạng FC trở lên",
         "Có kinh nghiệm lái xe đầu kéo từ 1–2 năm trở lên (ưu tiên)",
-        "Tuổi: 25 – 55",
+        "Tuổi: 25 – 55, có sức khỏe tốt",
         "Lý lịch rõ ràng, không có tiền án tiền sự",
       ],
     },
