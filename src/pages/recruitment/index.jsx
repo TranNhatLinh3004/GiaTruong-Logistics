@@ -39,9 +39,8 @@ function Recruitment(props) {
         <div className="hero-section">
           <h1 data-aos="fade-right">Cơ Hội Nghề Nghiệp</h1>
           <p className="text-[18px]" data-aos="fade-right">
-            Hãy tham gia đội ngũ của chúng tôi và cùng nhau phát triển trong
-            ngành logistics. Chúng tôi luôn tìm kiếm những người tài năng và đam
-            mê.
+            Nhằm đáp ứng nhu cầu mở rộng quy mô kinh doanh trong lĩnh vực
+            Logistics vận chuyển ô tô BẮC - NAM.
           </p>
         </div>
 
