@@ -1,6 +1,7 @@
 import Layout from "@/components/Layout";
 import React, { useState } from "react";
 import "./recruitment.css";
+import Link from "next/link";
 function Recruitment(props) {
   const [isOpen, setIsOpen] = useState(false);
   const toggleModal = () => setIsOpen((prev) => !prev);
@@ -97,12 +98,17 @@ function Recruitment(props) {
                     ))}
                   </ul>
                 </div>
-                <div className="job-hotline" style={{ marginBottom: "10px" }}>
+                <div
+                  className="job-hotline"
+                  style={{ marginBottom: "10px", fontWeight: "bold" }}
+                >
                   {" "}
                   Hotline: Mr. Lương - 0944455945
                 </div>
                 <button className="apply-button" onClick={toggleModal}>
-                  Ứng Tuyển Ngay
+                  <Link href="https://zalo.me/0944455945" target="_blank">
+                    Ứng Tuyển Ngay
+                  </Link>
                 </button>
               </div>
             ))}

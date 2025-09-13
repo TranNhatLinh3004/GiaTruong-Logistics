@@ -71,7 +71,7 @@
     color: white;
     padding: 5px 15px;
     border-radius: 20px;
-    font-size: 0.9em;
+    font-size: 1em;
 }
 
 .job-details {
@@ -95,12 +95,17 @@
 
 .apply-button {
     background-color: rgb(18 34 59);
-    color: white;
-    padding: 12px 30px;
+    padding: 10px 15px;
     border: none;
     border-radius: 5px;
     cursor: pointer;
     transition: background-color 0.3s;
+}
+
+.apply-button>a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: white;
 }
 
 .apply-button:hover {
